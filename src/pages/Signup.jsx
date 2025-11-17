@@ -10,7 +10,7 @@ export default function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:30083/back1/auth/signup", form);
+      const res = await axios.post("http://localhost:30083/auth/signup", form);
       alert(res.data);
       navigate("/");
     } catch {
